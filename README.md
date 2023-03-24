@@ -12,6 +12,7 @@ https://www.fao.org/land-water/land/land-governance/land-resources-planning-tool
 https://www.ifpri.org/interactive
 https://gaez.fao.org/
 https://data.apps.fao.org/
+https://sites.bu.edu/cliveg/research/vegetation-remote-sensing/
 
 
 https://trac.osgeo.org/geotiff/
