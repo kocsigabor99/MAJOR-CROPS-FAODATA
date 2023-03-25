@@ -14,6 +14,11 @@ https://gaez.fao.org/
 https://data.apps.fao.org/
 https://sites.bu.edu/cliveg/research/vegetation-remote-sensing/
 
+https://iopscience.iop.org/article/10.1088/1748-9326/8/3/034015/pdf
+https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1748-9326/8/3/034015/revision1/erl472821suppdata.pdf?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1680352126&Signature=sAwWJABTFjyWA5rr0m3fkHsbZcA%3D
+https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2007GB002947
+https://www.vox.com/2014/7/18/5913093/were-not-growing-enough-food-for-everyone-heres-how-to-change-that
+http://www.environmentreports.com/small-farms-stewards-global-nutrition/#section1
 
 https://trac.osgeo.org/geotiff/
 look at metadataharvestedareayieldfile!!!!!!
