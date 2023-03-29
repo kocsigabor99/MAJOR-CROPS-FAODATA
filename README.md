@@ -20,5 +20,7 @@ https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2007GB002947
 https://www.vox.com/2014/7/18/5913093/were-not-growing-enough-food-for-everyone-heres-how-to-change-that
 http://www.environmentreports.com/small-farms-stewards-global-nutrition/#section1
 
+https://ourworldindata.org/diet-compositions#animal-based-foods-form-a-larger-part-of-our-diet-as-we-get-richer
+
 https://trac.osgeo.org/geotiff/
 look at metadataharvestedareayieldfile!!!!!!
