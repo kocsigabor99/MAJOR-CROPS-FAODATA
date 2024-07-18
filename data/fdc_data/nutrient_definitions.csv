@@ -1,11 +1,11 @@
 number;name;unitName;derivationCode;derivationDescription
 ;Verbascose;G;A;Analytical
 202;Nitrogen;G;A;Analytical
-203;Protein;G;NC;Calculated
-204;Total lipid (fat);G;A;Analytical
+203;Protein;G;;
+204;Total lipid (fat);G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 205;Carbohydrate, by difference;G;NC;Calculated
 205.2;Carbohydrate, by summation;G;AS;Summed
-207;Ash;G;A;Analytical
+207;Ash;G;;
 208;Energy;KCAL;NC;Calculated
 209;Starch;G;A;Analytical
 210;Sucrose;G;A;Analytical
@@ -13,88 +13,96 @@ number;name;unitName;derivationCode;derivationDescription
 212;Fructose;G;A;Analytical
 213;Lactose;G;A;Analytical
 214;Maltose;G;A;Analytical
+221;Alcohol, ethyl;G;;
 227;Specific Gravity;SP_GR;A;Analytical
 236;Citric acid;MG;A;Analytical
 243;Malic acid;MG;A;Analytical
 245;Oxalic acid;MG;A;Analytical
 247;Pyruvic acid;MG;A;Analytical
 248;Quinic acid;MG;A;Analytical
-255;Water;G;A;Analytical
+255;Water;G;;
+262;Caffeine;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+263;Theobromine;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 268;Energy;kJ;NC;Calculated
-269;Total Sugars;G;A;Analytical
+269;Total Sugars;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 269.3;Sugars, Total;G;AS;Summed
 287;Galactose;G;A;Analytical
 288;Raffinose;G;A;Analytical
 289;Stachyose;G;A;Analytical
-291;Fiber, total dietary;G;A;Analytical
+291;Fiber, total dietary;G;;
 293;Total dietary fiber (AOAC 2011.25);G;A;Analytical
 293.3;High Molecular Weight Dietary Fiber (HMWDF);G;A;Analytical
 293.4;Low Molecular Weight Dietary Fiber (LMWDF);G;A;Analytical
 295;Fiber, soluble;G;A;Analytical
 297;Fiber, insoluble;G;A;Analytical
 298;Total fat (NLEA);G;AS;Summed
-301;Calcium, Ca;MG;A;Analytical
-303;Iron, Fe;MG;A;Analytical
-304;Magnesium, Mg;MG;A;Analytical
-305;Phosphorus, P;MG;A;Analytical
-306;Potassium, K;MG;A;Analytical
-307;Sodium, Na;MG;A;Analytical
+301;Calcium, Ca;MG;;
+303;Iron, Fe;MG;;
+304;Magnesium, Mg;MG;;
+305;Phosphorus, P;MG;;
+306;Potassium, K;MG;;
+307;Sodium, Na;MG;LC;"Label claim (back calculated from label by NDL staff; Calculated from label claim/serving (g or %RDI)"
 308;Sulfur, S;MG;A;Analytical
-309;Zinc, Zn;MG;A;Analytical
+309;Zinc, Zn;MG;;
 311;Cobalt, Co;UG;A;Analytical
-312;Copper, Cu;MG;A;Analytical
+312;Copper, Cu;MG;;
+313;Fluoride, F;UG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 314;Iodine, I;UG;A;Analytical
-315;Manganese, Mn;MG;A;Analytical
+315;Manganese, Mn;MG;;
 316;Molybdenum, Mo;UG;A;Analytical
-317;Selenium, Se;UG;A;Analytical
-319;Retinol;UG;A;Analytical
+317;Selenium, Se;UG;FLM;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Manuf. Calc. data/100"
+318;Vitamin A, IU;IU;NC;Calculated
+319;Retinol;UG;BNA;"Based on another form of the same food or similar food: constituents normalized to total; vitamin A"
 320;Vitamin A, RAE;UG;NC;Calculated
-321;Carotene, beta;UG;A;Analytical
+321;Carotene, beta;UG;BNA;"Based on another form of the same food or similar food: constituents normalized to total; vitamin A"
 321.1;cis-beta-Carotene;UG;A;Analytical
 321.2;trans-beta-Carotene;UG;A;Analytical
-322;Carotene, alpha;UG;A;Analytical
-323;Vitamin E (alpha-tocopherol);MG;A;Analytical
-324;Vitamin D (D2 + D3), International Units;IU;NC;Calculated
+322;Carotene, alpha;UG;BNA;"Based on another form of the same food or similar food: constituents normalized to total; vitamin A"
+323;Vitamin E (alpha-tocopherol);MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+324;Vitamin D (D2 + D3), International Units;IU;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 325;Vitamin D2 (ergocalciferol);UG;A;Analytical
-326;Vitamin D3 (cholecalciferol);UG;A;Analytical
+326;Vitamin D3 (cholecalciferol);UG;BFFN;"Based on another form of the food or similar food; Concentration adjustment; Fat; Retention factors not used"
 327;25-hydroxycholecalciferol;UG;A;Analytical
-328;Vitamin D (D2 + D3);UG;NC;Calculated
+328;Vitamin D (D2 + D3);UG;Z;Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)
 330;Phytoene;UG;A;Analytical
 331;Phytofluene;UG;A;Analytical
 332;Carotene, gamma;UG;A;Analytical
 333;Vitamin A;MG;;
-334;Cryptoxanthin, beta;UG;A;Analytical
+334;Cryptoxanthin, beta;UG;BNA;"Based on another form of the same food or similar food: constituents normalized to total; vitamin A"
 335;Cryptoxanthin, alpha;UG;A;Analytical
-337;Lycopene;UG;A;Analytical
+337;Lycopene;UG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 337.1;cis-Lycopene;UG;A;Analytical
 337.2;trans-Lycopene;UG;A;Analytical
-338;Lutein + zeaxanthin;UG;A;Analytical
+338;Lutein + zeaxanthin;UG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 338.1;Lutein;UG;A;Analytical
 338.2;Zeaxanthin;UG;A;Analytical
 338.3;cis-Lutein/Zeaxanthin;UG;A;Analytical
-341;Tocopherol, beta;MG;A;Analytical
-342;Tocopherol, gamma;MG;A;Analytical
-343;Tocopherol, delta;MG;A;Analytical
-344;Tocotrienol, alpha;MG;A;Analytical
-345;Tocotrienol, beta;MG;A;Analytical
-346;Tocotrienol, gamma;MG;A;Analytical
-347;Tocotrienol, delta;MG;A;Analytical
+341;Tocopherol, beta;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+342;Tocopherol, gamma;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+343;Tocopherol, delta;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+344;Tocotrienol, alpha;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+345;Tocotrienol, beta;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+346;Tocotrienol, gamma;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+347;Tocotrienol, delta;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 354;Boron, B;UG;A;Analytical
 371;Nickel, Ni;UG;A;Analytical
-401;Vitamin C, total ascorbic acid;MG;A;Analytical
-404;Thiamin;MG;A;Analytical
-405;Riboflavin;MG;A;Analytical
-406;Niacin;MG;A;Analytical
-410;Pantothenic acid;MG;A;Analytical
-415;Vitamin B-6;MG;A;Analytical
+401;Vitamin C, total ascorbic acid;MG;;
+404;Thiamin;MG;;
+405;Riboflavin;MG;;
+406;Niacin;MG;;
+410;Pantothenic acid;MG;;
+415;Vitamin B-6;MG;;
 416;Biotin;UG;A;Analytical
-417;Folate, total;UG;A;Analytical
-418;Vitamin B-12;UG;A;Analytical
-421;Choline, total;MG;A;Analytical
+417;Folate, total;UG;FLM;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Manuf. Calc. data/100"
+418;Vitamin B-12;UG;;
+421;Choline, total;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 428;Vitamin K (Menaquinone-4);UG;A;Analytical
 429;Vitamin K (Dihydrophylloquinone);UG;A;Analytical
-430;Vitamin K (phylloquinone);UG;A;Analytical
+430;Vitamin K (phylloquinone);UG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+431;Folic acid;UG;NC;Calculated
+432;Folate, food;UG;;
 433;5-methyl tetrahydrofolate (5-MTHF);UG;A;Analytical
+435;Folate, DFE;UG;NC;Calculated
 436;10-Formyl folic acid (10HCOFA);UG;A;Analytical
 437;5-Formyltetrahydrofolic acid (5-HCOH4;UG;A;Analytical
 450;Choline, free;MG;A;Analytical
@@ -103,74 +111,81 @@ number;name;unitName;derivationCode;derivationDescription
 453;Choline, from glycerophosphocholine;MG;A;Analytical
 454;Betaine;MG;A;Analytical
 455;Choline, from sphingomyelin;MG;A;Analytical
-501;Tryptophan;G;A;Analytical
-502;Threonine;G;A;Analytical
-503;Isoleucine;G;A;Analytical
-504;Leucine;G;A;Analytical
-505;Lysine;G;A;Analytical
-506;Methionine;G;A;Analytical
-507;Cystine;G;A;Analytical
-508;Phenylalanine;G;A;Analytical
-509;Tyrosine;G;A;Analytical
-510;Valine;G;A;Analytical
-511;Arginine;G;A;Analytical
-512;Histidine;G;A;Analytical
-513;Alanine;G;A;Analytical
-514;Aspartic acid;G;A;Analytical
-515;Glutamic acid;G;A;Analytical
-516;Glycine;G;A;Analytical
-517;Proline;G;A;Analytical
-518;Serine;G;A;Analytical
+501;Tryptophan;G;;
+502;Threonine;G;;
+503;Isoleucine;G;;
+504;Leucine;G;;
+505;Lysine;G;;
+506;Methionine;G;;
+507;Cystine;G;;
+508;Phenylalanine;G;;
+509;Tyrosine;G;;
+510;Valine;G;;
+511;Arginine;G;;
+512;Histidine;G;;
+513;Alanine;G;;
+514;Aspartic acid;G;;
+515;Glutamic acid;G;;
+516;Glycine;G;;
+517;Proline;G;;
+518;Serine;G;;
 521;Hydroxyproline;G;A;Analytical
 526;Cysteine;G;A;Analytical
-601;Cholesterol;MG;A;Analytical
-605;Fatty acids, total trans;G;AS;Summed
-606;Fatty acids, total saturated;G;A;Analytical
-607;SFA 4:0;G;A;Analytical
-608;SFA 6:0;G;A;Analytical
-609;SFA 8:0;G;A;Analytical
-610;SFA 10:0;G;A;Analytical
-611;SFA 12:0;G;A;Analytical
-612;SFA 14:0;G;A;Analytical
-613;SFA 16:0;G;A;Analytical
-614;SFA 18:0;G;A;Analytical
-615;SFA 20:0;G;A;Analytical
-617;MUFA 18:1;G;A;Analytical
-618;PUFA 18:2;G;A;Analytical
-619;PUFA 18:3;G;A;Analytical
-620;PUFA 20:4;G;A;Analytical
-621;PUFA 22:6 n-3 (DHA);G;A;Analytical
-624;SFA 22:0;G;A;Analytical
-627;PUFA 18:4;G;A;Analytical
-628;MUFA 20:1;G;A;Analytical
-629;PUFA 20:5 n-3 (EPA);G;A;Analytical
-630;MUFA 22:1;G;A;Analytical
-631;PUFA 22:5 n-3 (DPA);G;A;Analytical
+573;Vitamin E, added;MG;NR;"Nutrient that is based on other nutrient/s; value used directly, ex. Nut.#204 from Nut.#298"
+578;Vitamin B-12, added;UG;Z;Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)
+601;Cholesterol;MG;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+605;Fatty acids, total trans;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+606;Fatty acids, total saturated;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+607;SFA 4:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+608;SFA 6:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+609;SFA 8:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+610;SFA 10:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+611;SFA 12:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+612;SFA 14:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+613;SFA 16:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+614;SFA 18:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+615;SFA 20:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+617;MUFA 18:1;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+618;PUFA 18:2;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+619;PUFA 18:3;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+620;PUFA 20:4;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+621;PUFA 22:6 n-3 (DHA);G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+624;SFA 22:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+625;MUFA 14:1;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+626;MUFA 16:1;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+627;PUFA 18:4;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+628;MUFA 20:1;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+629;PUFA 20:5 n-3 (EPA);G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+630;MUFA 22:1;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+631;PUFA 22:5 n-3 (DPA);G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 632;SFA 5:0;G;A;Analytical
 633;SFA 7:0;G;A;Analytical
 634;SFA 9:0;G;A;Analytical
 635;MUFA 12:1;G;A;Analytical
+636;Phytosterols;MG;;
 637;Ergosterol;MG;A;Analytical
 638;Stigmasterol;MG;A;Analytical
 639;Campesterol;MG;A;Analytical
 640;Brassicasterol;MG;A;Analytical
 641;Beta-sitosterol;MG;A;Analytical
 642;Campestanol;MG;A;Analytical
-645;Fatty acids, total monounsaturated;G;A;Analytical
-646;Fatty acids, total polyunsaturated;G;AS;Summed
+645;Fatty acids, total monounsaturated;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+646;Fatty acids, total polyunsaturated;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 647;Beta-sitostanol;MG;A;Analytical
 649;Delta-5-avenasterol;MG;A;Analytical
 651;Phytosterols, other;MG;A;Analytical
-652;SFA 15:0;G;A;Analytical
-653;SFA 17:0;G;A;Analytical
-654;SFA 24:0;G;A;Analytical
+652;SFA 15:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+653;SFA 17:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+654;SFA 24:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 662;TFA 16:1 t;G;A;Analytical
 663;TFA 18:1 t;G;A;Analytical
 664;TFA 22:1 t;G;A;Analytical
 665;TFA 18:2 t not further defined;G;A;Analytical
+666;PUFA 18:2 i;G;A;Analytical
+669;TFA 18:2 t,t;G;A;Analytical
 670;PUFA 18:2 CLAs;G;A;Analytical
-671;MUFA 24:1 c;G;A;Analytical
-672;PUFA 20:2 n-6 c,c;G;A;Analytical
+671;MUFA 24:1 c;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+672;PUFA 20:2 n-6 c,c;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 673;MUFA 16:1 c;G;A;Analytical
 674;MUFA 18:1 c;G;A;Analytical
 675;PUFA 18:2 n-6 c,c;G;A;Analytical
@@ -181,12 +196,13 @@ number;name;unitName;derivationCode;derivationDescription
 682;SFA 23:0;G;A;Analytical
 683;PUFA 22:3;G;A;Analytical
 685;PUFA 18:3 n-6 c,c,c;G;A;Analytical
-687;MUFA 17:1;G;A;Analytical
-689;PUFA 20:3;G;A;Analytical
-693;Fatty acids, total trans-monoenoic;G;AS;Summed
+687;MUFA 17:1;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+689;PUFA 20:3;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+693;Fatty acids, total trans-monoenoic;G;NC;Calculated
 694;Fatty acids, total trans-dienoic;G;AS;Summed
-695;Fatty acids, total trans-polyenoic;G;AS;Summed
-697;MUFA 15:1;G;A;Analytical
+695;Fatty acids, total trans-polyenoic;G;NC;Calculated
+696;SFA 13:0;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
+697;MUFA 15:1;G;FLA;"Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Analytical data"
 698;PUFA 22:2;G;A;Analytical
 699;SFA 11:0;G;A;Analytical
 710;Daidzein;MG;A;Analytical
@@ -212,8 +228,11 @@ number;name;unitName;derivationCode;derivationDescription
 851;PUFA 18:3 n-3 c,c,c (ALA);G;A;Analytical
 852;PUFA 20:3 n-3;G;A;Analytical
 853;PUFA 20:3 n-6;G;A;Analytical
+855;PUFA 20:4 n-6;G;A;Analytical
 856;PUFA 18:3i;G;A;Analytical
+857;PUFA 21:5;G;A;Analytical
 858;PUFA 22:4;G;A;Analytical
+859;MUFA 18:1-11 t (18:1t n-7);G;PAK;"Based on physical composition; Derived from analytical data; Known physical composition"
 861;PUFA 20:3 n-9;G;A;Analytical
 957;Energy (Atwater General Factors);KCAL;NC;Calculated
 958;Energy (Atwater Specific Factors);KCAL;NC;Calculated
