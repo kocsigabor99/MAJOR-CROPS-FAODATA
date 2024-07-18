@@ -71,6 +71,7 @@ def convert_json_to_csv():
     nutrients_to_keep = {
         1165: 'B2', # Thiamin
         1166: 'B3', # Riboflavin
+        2048: 'kCal', # Energy (Atwater Specific Factors)
         1008: 'kCal', # Energy
     }
 
