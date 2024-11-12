@@ -26,7 +26,7 @@ The NRFI calculates the nutritional requirements of a population by using data f
 
 The app randomly selects food combinations to meet the required micronutrient intake, then optimizes this selection after several iterations.
 
-For more detailed methodology, refer to the [project documentation](https://github.com/yourusername/nrfi).
+For more detailed methodology, refer to the [project documentation](https://github.com/kocsigabor99/Nutritional-Requirement-Forecasting-Initiative/raw/refs/heads/main/project_documentation.odt).
 
 ## Future Improvements
 
