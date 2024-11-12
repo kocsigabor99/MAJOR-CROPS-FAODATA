@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-results = r"C:\Users\kocsi\OneDrive\Asztali gép\Nutritional Requirement Forecasting Initiative\data\result_sum_adj_df.csv"
+results = "https://raw.githubusercontent.com/kocsigabor99/MAJOR-CROPS-FAODATA/refs/heads/main/data/result_sum_adj_df.csv"
 
-food_data = r"C:\Users\kocsi\OneDrive\Asztali gép\Nutritional Requirement Forecasting Initiative\data\WAFCT2019+PULSES.csv"
+food_data = "https://raw.githubusercontent.com/kocsigabor99/MAJOR-CROPS-FAODATA/refs/heads/main/data/WAFCT2019%2BPULSES.csv"
 
-populationstat = r"C:\Users\kocsi\OneDrive\Asztali gép\Nutritional Requirement Forecasting Initiative\data\UN_PPP2024_Output_PopTot.csv"
+populationstat = "https://raw.githubusercontent.com/kocsigabor99/MAJOR-CROPS-FAODATA/refs/heads/main/data/UN_PPP2024_Output_PopTot.csv"
 
 # Load the CSV files
 nutrient_needs_df = pd.read_csv(results)

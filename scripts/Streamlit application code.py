@@ -34,11 +34,11 @@ numeric_columns = daily_needs_per_citizen.select_dtypes(include=['float64', 'int
 daily_needs_per_citizen[numeric_columns] /= population
 
 # Display the total nutrient needs for the country
-st.subheader(f'Total Nutrient Needs for {country} in {year} (Countrywide)')
+st.subheader(f'Total Nutrient Needs for {country} in {year} for a day (Countrywide)')
 st.write(filtered_needs)
 
 # Display the per capita daily nutrient needs for the country
-st.subheader(f'Per Capita Daily Nutrient Needs for {country} in {year}')
+st.subheader(f'Per Capita Average Daily Nutrient Needs for {country} in {year}')
 st.write(daily_needs_per_citizen)
 
 # Define food group calorie limits for daily intake
@@ -172,15 +172,6 @@ if st.button("Generate Country-Scale Meal Plan"):
     all_iterations, best_iteration, final_scaled_plan = generate_optimized_meal_plan(
         daily_needs_per_citizen, food_data_df, max_foods, max_attempts, population, filtered_needs
     )
-
-    # Display all iterations with nutrient percentages and totals
-    st.subheader("Iterations Summary")
-    for result in all_iterations:
-        st.write(f"Iteration {result['Iteration']}:")
-        st.write("Meal Plan (in grams per type):", result["Meal Plan (grams per type)"])
-        st.write("Total Nutrients:", result["Total Nutrients"])
-        st.write("Percentage Fulfillment (%) per Nutrient:", result["Percentage Fulfillment (%)"])
-        st.write("----------------------------------------------------")
 
     # Display the best iteration if found
     if best_iteration:
