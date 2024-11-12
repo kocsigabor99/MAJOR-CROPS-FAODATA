@@ -9,7 +9,7 @@ The Nutritional Requirement Forecasting Initiative (NRFI) aims to estimate the p
 - [Contributing](#contributing)
 - [Contact](#contact)
 
-## Usage:[Open app in browser](https://nutritional-requirement-forecasting-initiative-inie88ebreaysf5.streamlit.app/)
+## Usage: [Open app in browser](https://nutritional-requirement-forecasting-initiative-inie88ebreaysf5.streamlit.app/)
 - Select a country and year to get national nutrient needs.
 - Calculate per capita nutrient needs.
 - Generate an optimized meal plan that satisfies daily nutrient needs for the population.
