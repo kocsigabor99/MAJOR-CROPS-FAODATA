@@ -1,15 +1,18 @@
-import os.path
-from operator import itemgetter
-
 import base64
 import csv
 import hashlib
 import json
-import requests
+import os.path
+import random
 from functools import cached_property
+from operator import itemgetter
 from typing import Generator, Literal, TypedDict
 
+import requests
+
 from common import DATA_DIR, JSON, get_secret
+
+random.seed(684)
 
 FdcDataType = Literal['Branded', 'Foundation', 'Survey (FNDDS)', 'SR Legacy']
 
@@ -446,21 +449,70 @@ class Explorer:
             if amount and float(amount) > 0 and (not energy_only or 'Energy' in nutrient['name']):
                 print(f'{nutrient["name"]}: {amount} {nutrient["unitName"]}')
 
+    def make_csv_shorter(self):
+        """
+        Make the CSV file shorter by:
+        - Use only the selected columns
+        - Take 100 random rows
+        """
+
+        nutrients_to_keep = [
+            'Protein',
+            'Energy',
+            'Fiber, total dietary',
+            'Calcium, Ca',
+            'Magnesium, Mg',
+            'Vitamin B-6',
+            'Vitamin B-12',
+            'Vitamin C, total ascorbic acid',
+        ]
+        with open(self.NUTRIENT_DEFINITIONS_CSV) as f:
+            reader = csv.DictReader(f, delimiter=';')
+            nutrients = [row['number'] for row in reader if row['name'] in nutrients_to_keep]
+            if '208' in nutrients and '268' in nutrients:
+                # Energy in kCal (208) and Energy in KJ (268) are representing the same, so we only need one
+                nutrients.remove('268')
+
+        with open(self.FOOD_NUTRIENTS_CSV) as f:
+            reader = csv.DictReader(f, delimiter=';')
+            rows = [row for row in reader]
+
+            # Take 100 random rows
+            random_rows = random.sample(rows, 100)
+
+            # Remove the columns that are not in the selected nutrients
+            print(random_rows[0])
+            headers =  ['fdcId', 'description'] + nutrients
+            shorter_rows = [{key: value for key, value in row.items() if key in headers} for row in random_rows]
+
+            # Replace the numeric keys with the nutrient names
+            for row in shorter_rows:
+                for nutrient_number in nutrients:
+                    row[self.nutrients[nutrient_number]['name']] = row.pop(nutrient_number)
+            headers = ['fdcId', 'description'] + [self.nutrients[nutrient_number]['name'] for nutrient_number in nutrients]
+
+            # Write the shorter CSV file
+            shorter_csv = os.path.join(DATA_DIR, 'fdc_data', 'food_nutrients_short.csv')
+            with open(shorter_csv, 'w') as f:
+                writer = csv.DictWriter(f, fieldnames=headers, delimiter=';')
+                writer.writeheader()
+                writer.writerows(shorter_rows)
+
 
 if __name__ == '__main__':
-    fdc = FoodDataCentral()
-    foods = list(fdc.food_list())
-    print(len(foods))
+    # fdc = FoodDataCentral()
+    # foods = list(fdc.food_list())
+    # print(len(foods))
 
-    csv_generator = CsvGenerator()
-    csv_generator.generate_nutrient_definitions_csv()
-    csv_generator.generate_food_nutrients_csv()
+    # csv_generator = CsvGenerator()
+    # csv_generator.generate_nutrient_definitions_csv()
+    # csv_generator.generate_food_nutrients_csv()
 
     explorer = Explorer()
-    explorer.print_snippet(explorer.FOOD_NUTRIENTS_CSV)
-    explorer.write_food_item_names()
-    explorer.top_n_per_nutrient(10)
-
-    for fcdid in [168271, 171029, 171400]:
-        explorer.print_food_item(fcdid, energy_only=True)
-        print()
+    # explorer.print_snippet(explorer.FOOD_NUTRIENTS_CSV)
+    # explorer.write_food_item_names()
+    # explorer.top_n_per_nutrient(10)
+    # for fcdid in [168271, 171029, 171400]:
+    #     explorer.print_food_item(fcdid, energy_only=True)
+    #     print()
+    explorer.make_csv_shorter()
